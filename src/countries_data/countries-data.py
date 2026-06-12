@@ -15,7 +15,7 @@ DB_NAME = "url2green.db"
 API_SERVER = "https://api.thegreenwebfoundation.org"
 
 
-class GreenCheck:
+class CountriesData:
     """Implement methods to check if a domain is part of the Green WEB"""
 
     def __init__(self):

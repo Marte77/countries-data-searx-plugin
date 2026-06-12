@@ -9,33 +9,31 @@ build-backend = "hatchling.build"
 [project]
 # ==============================================================================
 
-name = "only_show_green_results"
-dynamic = ["version"]
-
+name = "countries-data"
+version = "0.0.1"
 readme = "README.rst"
 requires-python = ">=3.11"
 license = "AGPL-3.0-or-later"
-description = "The Green Web Foundation searx plugins"
+description = "SearXNG plugin that shows a country's data such as GDP, GDP per Capita, population, etc"
 authors = [
-    { name = "The Green Web Foundation", email = "chris@productscience.co.uk" },
+    { name = "Martinho", email = "eu@martinho.pt" },
     { name = "SearXNG Community", email = "markus.heiser@darmarit.de" },
 ]
 
 dependencies = [
   "flask_babel",
+  "countryinfo[fuzzy]"
 ]
 
 [project.urls]
-Code = "https://github.com/return42/tgwf-searx-plugins"
-Homepage = "https://github.com/return42/tgwf-searx-plugins"
-"Issue tracker" = "https://github.com/return42/tgwf-searx-plugins/issues"
+Code = "https://github.com/Marte77/countries-data-searx-plugin"
+Homepage = "https://github.com/Marte77/countries-data-searx-plugin"
+"Issue tracker" = "https://github.com/Marte77/countries-data-searx-pluginissues"
 
 # ==============================================================================
 [tool.hatch]
 # ==============================================================================
 
-[tool.hatch.version]
-path = "src/only_show_green_results/__init__.py"
 
 [tool.hatch.metadata]
 allow-direct-references = true
@@ -46,7 +44,7 @@ allow-direct-references = true
 # hatch env: default
 # ------------------
 
-[tool.hatch.envs.default]
+[tool.hatch.envs.countries_data_sxng]
 python = "3.13"
 dependencies = [
   "basedpyright==1.27.*",
