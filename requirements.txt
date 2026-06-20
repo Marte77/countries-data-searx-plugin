@@ -1,0 +1,2 @@
+countryinfo[fuzzy]==1.0.1
+world_bank_data==0.1.4

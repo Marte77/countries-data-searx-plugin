@@ -1,0 +1,21 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<div>
+  <h3>{{answer.answer}}</h3>
+  <canvas id="{{answer.country}}_{{answer.answer}}_data_chart"></canvas>
+  <p>Source: World Bank</p>
+</div>
+
+
+<script>
+const ctx_{{answer.country}}_{{answer.answer}}= document.getElementById('{{answer.country}}_{{answer.answer}}_data_chart');
+  new Chart(ctx_{{answer.country}}_{{answer.answer}} , {
+    type: 'line',
+    data: {
+      labels: {{answer.x_axis | tojson}},
+      datasets: [{
+        label: {{answer.metric | tojson}},
+        data: {{answer.y_axis | tojson }},
+      }]
+    },
+  });
+</script>
