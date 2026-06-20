@@ -5,7 +5,7 @@ i did this plugin because i really missed the google graphs they used to have pr
 the data comes from the world bank, via the pip library in the requirements folder. currently only has gdp, gdp per capita, population
 
 the code is a bit messy, its my first time doing flask templating and working with plugins in searx and working with dataframes.
-
+the library script in the html could also be included somewhereelse but i couldnt be bothered to check the docs, i think browsers optimize away multiple equal remote script anywways
 # metrics to add
 - i want to have graphs have multiple countries, so if i search "population spain", neighbouring countries would be also listed in the graph, like google used to do as well
 - other metrics that may be insteresting and are often used
