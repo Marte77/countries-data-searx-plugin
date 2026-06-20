@@ -16,4 +16,4 @@ mv $PLUGIN_PY $SEARX_DIRECTORY/searx/plugins/$PLUGIN_PY
 
 echo -e "\033[0;31m DONT FORGET TO REGISTER THE PLUGIN IN THE $SEARX_DIRECTORY/searx/settings.yml FILE!!!!! \033[0m"
 
-printf "Example (probably badly indented):\nplugins:\n\t...BLABLABLA\n\tsearx.plugins.countries_data.CountriesDataPlugin:\n\t\tactive:true"
+printf "Example (probably badly indented):\nplugins:\n\t...BLABLABLA\n\tsearx.plugins.countries_data.CountriesDataPlugin:\n\t\tactive:true\n\n"
