@@ -11,5 +11,7 @@ the code is a bit messy, its my first time doing flask templating and working wi
 - other metrics that may be insteresting and are often used
 
 # installing
-just run `install_plugin.sh <searx_main_path>` (the path should be the folder that contains the searx/ folder!)
-if you use other custom themes, you will have to move the html file in the repo to the correct `<searx_main_path>/searx/templates/<your_theme>/answer/` path
+1. just run `install_plugin.sh <searx_main_path>` (the path should be the folder that contains the searx/ folder!)
+2. if you use other custom themes, you will have to move the html file in the repo to the correct `<searx_main_path>/searx/templates/<your_theme>/answer/` path
+3. make sure the requirements are properly installed, I spent a lot of time looking for an answer because i forgot to `pip install -r requirements.txt` since my service file doesn't use make
+ 
